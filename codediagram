@@ -1,0 +1,24 @@
+fig, ax = plt.subplots()
+
+x1 = (4,8,13,17,20)
+y1 = (54, 67, 98, 78, 90)
+
+x2 = (4,8,13,17,20)
+y2 = (44, 57, 88, 68, 80)
+
+ax.plot(x1, y1)
+ax.plot(x2, y2)
+plt.show()
+
+fig, ax = plt.subplots()
+x = [2,4,6,7,9,13,19,26,29,31,36,40,48,51,57,67,69,71,78,88]
+y = [54,72,43,2,8,98,109,5,35,28,48,83,94,84,73,11,464,75,200,54]
+plt.scatter(x,y)
+plt.show()
+
+# Data akan tersimpan didalam satu folder dengan file codingan
+fig.savefig('Scatterplot.png')
+
+# Codingan dibawah ini digunakan untuk menampilkan gambar yang ada didirektori codingan
+from IPython.display import Image
+Image('Scatterplot.png')
